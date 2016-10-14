@@ -5,6 +5,6 @@
 	<title>DevBattle</title>
 </head>
 <body>
-Devbattle
+Devbattle2
 </body>
 </html>
