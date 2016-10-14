@@ -2,21 +2,23 @@
 <html>
 <head>
     <meta charset="utf-8">
-	<title>Wolkenkrabbels</title>
-	<style>
-    </style>
+	<title>DevBattle</title>
 </head>
 <body>
     <form>
-        <input type="text" name="input" oninput="myFunction(this.value)" value="GOOGLE">
+        <input type="text" name="input" oninput="f(this.value)">
     </form>
-    
-    <p id="a"></p>
-    
 <script>
-function myFunction(val) {
-    document.getElementById("a").innerHTML = val; 
-}
+   function f(val) {
+        //document.getElementById("a").innerHTML = val;
+       $c = a(val);
+       console.log("_");
+       console.log("/"+ toString(c) +""\");
+                   
+    }
+    
+    function a(x){c=x.toUpperCase();return c.charCodeAt(0) - 65+1;} a('z');
+
 </script>
 </body>
 </html>
