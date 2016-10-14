@@ -2,21 +2,21 @@
 <html>
 <head>
     <meta charset="utf-8">
-	<title>DevBattle</title>
-	<link type="text/css" rel="stylesheet" href="css/style.css">
+	<title>Wolkenkrabbels</title>
+	<style>
+    </style>
 </head>
 <body>
-<header>
-    <h1>title - Dev</h1>
-</header>
-<nav>
+    <form>
+        <input type="text" name="input" oninput="myFunction(this.value)" value="GOOGLE">
+    </form>
     
-</nav>
-<main>
+    <p id="a"></p>
     
-</main>
-<footer>
-    
-</footer>
+<script>
+function myFunction(val) {
+    document.getElementById("a").innerHTML = val; 
+}
+</script>
 </body>
 </html>
