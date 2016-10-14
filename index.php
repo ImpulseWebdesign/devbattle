@@ -3,9 +3,20 @@
 <head>
     <meta charset="utf-8">
 	<title>DevBattle</title>
+	<link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
 <body>
-Devbattle
-<h1> title </h1>
+<header>
+    <h1>Devbattle</h1>
+</header>
+<nav>
+    
+</nav>
+<main>
+    
+</main>
+<footer>
+    
+</footer>
 </body>
 </html>
