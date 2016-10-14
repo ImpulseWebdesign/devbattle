@@ -7,7 +7,7 @@
 </head>
 <body>
 <header>
-    <h1>Devbattle</h1>
+    <h1>title - Dev</h1>
 </header>
 <nav>
     
