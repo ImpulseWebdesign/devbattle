@@ -1,0 +1,1 @@
+function a(x){c=x.toUpperCase();return c.charCodeAt(0) - 65+1;} a('z')
