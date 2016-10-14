@@ -6,19 +6,52 @@
 </head>
 <body>
     <form>
-        <input type="text" name="input" oninput="f(this.value)">
+        <input type="text" name="input" onchange="my(this.value)">
     </form>
-<script>
-   function f(val) {
-        //document.getElementById("a").innerHTML = val;
-       $c = a(val);
-       console.log("_");
-       console.log("/"+ toString(c) +""\");
-                   
-    }
+<script type="text/javascript">
     
-    function a(x){c=x.toUpperCase();return c.charCodeAt(0) - 65+1;} a('z');
+function my(val) {
 
+   $c = a(val);
+   console.log($c);
+    
+    
+    $m = Math.max.apply(null, $c)+2;
+    console.log($m);
+    map = "";
+    for($i=0;$i<$m;$i++){
+        
+        for($j=0;$j<$c.length;$j++){
+            
+            //console.log($i);
+            //console.log($j);
+            
+            if($i == ($m - ($c[$j]+2))){
+                map += "_";
+            }else if($i == ($m - ($c[$j]+1))){
+                map += "\/ \\";
+            }else if($i <= $c[$j] && $i != $m){
+                map += "| |";
+            }else if($i == $m){
+                map += "___";
+            }else{
+                map += " ";
+            }
+            
+            
+            
+            if(($j+1) == $c.length){
+                map += '\n';
+            }
+           //console.log("/"+ toString($c) +""\");
+        }
+        //map += '\n';
+        
+    }
+    console.log(map);
+
+}
+function a(x){c=x.toUpperCase();b = []; for(i = 0; i < c.length; i++){ b.push(c[i].charCodeAt(0) - 65+1);} return b; }
 </script>
 </body>
 </html>
